@@ -1,0 +1,20 @@
+.root{
+	-fx-font-size: 12px;
+}
+
+.chart {
+	-fx-create-symbols: false;
+	-fx-animated: false;
+}
+
+.chart-title {
+	-fx-font-size: 8px;
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+}
+
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}

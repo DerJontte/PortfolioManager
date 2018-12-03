@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/StockAnalyzer.ini" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/CDL.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/Cookie.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/CookieList.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/HTTP.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/HTTPTokener.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONArray.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONException.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONML.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONObject.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONString.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONStringer.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONTokener.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/JSONWriter.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/Kim.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/Property.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/README" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/XML.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/json/XMLTokener.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/Main.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/control/ConfigReader.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/control/EventHandlers.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/control/FileDialogs.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/JDataReader.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/NetAlphaVantage.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/NetLocalData.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/NetworkInterface.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/PearsonCalculator.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/Portfolio.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/RoundFix.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/model/Transaction.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/BuyNewDialog.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/CommonMenu.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/ConfirmationMessage.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/ErrorMessage.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/GUI.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/InformationMessage.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/PortfolioGUI.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/SellDialog.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/StockChart.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/StockGUI.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/uppgift3/view/application.css" charset="windows-1252" />
+  </component>
+</project>
