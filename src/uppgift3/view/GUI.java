@@ -83,7 +83,7 @@ public class GUI {
 			primaryStage.setTitle("StockAnalyzer");
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			// TimeSeries är troligtvis det som användaren först vill ändra på, så vi sätter programmets fokus till den rullgardinsmenyn:
+			// TimeSeries är troligtvis det som användaren först vill ändra på, så programmets fokus sätts till den rullgardinsmenyn:
 			GUI.stockGUI.timeSeries.requestFocus();
 
 		} catch (Exception e) {

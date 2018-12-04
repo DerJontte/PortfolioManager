@@ -75,7 +75,7 @@ public class StockChart extends LineChart<String, Number> {
 
 		if (jReader1.isIntraDay && !series2.getData().isEmpty()) {
 			// Detta är en quick'n'dirty hack för att avhjälpa problemet att FX av nån anledning ritar linecharten helt fel
-			// om det saknas värden mitt i räckan på nåndera serien. Vi bara kopierar det senaste funna värdet till den tomma
+			// om det saknas värden mitt i räckan på nåndera serien. Det senast funna värdet kopieras helt sonika till den tomma
 			// positionen. Värdet kunde givetvis interpoleras från de sista och följande funna värdena, men troligtvis skulle
 			// inte det heller motsvara det riktiga värdet vid den givna tidpunkten.
 			int max = Math.max(series1.getData().size(), series2.getData().size());

@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicReference;
 
 /* ************************************************************************************************************************* /
- * 	Denna klass används för att koppla upp sig till AlphaVantage och har metoder specifika för att hämta data från den servern.
+ * 	Denna klass används för att koppla upp mot AlphaVantage och har metoder specifika för att hämta data från den servern.
  * 	Konstruktorn lagrar serverns adress och en APIKey i klassvariabler, och med dessa plus den formaterade queryn hämtas data
  * 	från servern.
  */

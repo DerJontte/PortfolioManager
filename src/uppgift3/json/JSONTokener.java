@@ -1,4 +1,4 @@
-package json;
+package uppgift3.json;
 
 import java.io.*;
 

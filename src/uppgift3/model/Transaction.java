@@ -13,7 +13,7 @@ import java.util.Comparator;
 /* ******************************************************************************************************************************
  *  En instans av klassen Transaction omfattar ett enskilt aktieköp.
  * 
- * 	En för varje aktieköp sparas information om: 
+ * 	För varje aktieköp sparas information om:
  * 		- Aktienamnets kod
  * 		- Antal köpta aktier
  * 		- Pris per aktie
@@ -21,8 +21,8 @@ import java.util.Comparator;
  * 		- Affärens datum
  *		- Ett identifieringsnummer
  * 
- *  Klassen har också variabler för uppdaterat enhetspris och uppdaterat totalvärde. Dessa kan både anges då transaktionen
- *  skapas och uppdateras senare.
+ *  Klassen har också variabler för uppdaterat enhetspris och uppdaterat totalvärde. Dessa kan anges då transaktionen
+ *  skapas eller uppdateras senare.
  */
 
 public class Transaction implements Comparator<Transaction>, Serializable {

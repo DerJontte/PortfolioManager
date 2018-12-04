@@ -2,14 +2,6 @@ package uppgift3.model;
 
 /* *****************************************************************************************************************
  * Denna klass räknar ut korrellationskoefficienten då användaren valt att visa två stycken aktier samtidigt.
- * 
- * Det gick helt klart mest tid till att koda denna klass, för oavset vilken formel jag använder (jag testade fyra eller fem olika)
- * och hur jag strukturerar algoritmen, och vilka talrepresentationer (double, float, BigDecimal) och vilken precision
- * (från tre ända upp till trettio decimaler) jag använder så får jag inte resultatet att stämma överens med det som två olika 
- * nätsidor ger som resultat. Jag har också försökt ta bort outliers med två olika algoritmer, men det hjälper inte heller...
- * 
- * De två sidorna jag checkar med ger förvisso inte likada resultat sinsemellan heller,trots att jag sätter in exakt samma 
- * tidsintervall i dem, så kanske det är skillnader i hur olika tjänster definierar t.ex. "adjusted close"?
  */
 
 import javafx.scene.chart.XYChart.Series;
@@ -21,7 +13,7 @@ import java.util.Iterator;
 public class PearsonCalculator {
 
 	public static String calculate(JDataReader jReader1, JDataReader jReader2) throws Exception {
-		// Vi jämför aktiernas värde vid slutet av börsdagarna
+		// Aktiernas värde jämförs vid slutet av börsdagarna
 		Series<String, Number> series1 = jReader1.getXYSeries(jReader1.getSeriesName(". close"));
 		Series<String, Number> series2 = jReader2.getXYSeries(jReader2.getSeriesName(". close"));
 

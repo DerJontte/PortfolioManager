@@ -77,8 +77,8 @@ public class PortfolioGUI {
 		} catch (Exception e) {
 			// Trådarna trasslar ihop sig rejält här, och jag kom inte på något bättre sätt att få ordning på dem.
 			// Denna "tuggumi och silvertejp" -metod låter helt enkelt trådarna försöka uppdatera portfolielistan,
-			// och om någon annan tråd redan håller på med det så får det uppstå en exception som vi i praktiken bara
-			// avfärdar.
+			// och om någon annan tråd redan håller på med det så får det uppstå en exception som i praktiken bara
+			// avfärdas.
 			return; 
 		}
 	}

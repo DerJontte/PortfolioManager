@@ -7,8 +7,8 @@ import javafx.collections.ObservableList;
 import javafx.scene.chart.XYChart;
 import javafx.scene.chart.XYChart.Series;
 import javafx.util.Pair;
-import json.JSONArray;
-import json.JSONObject;
+import uppgift3.json.JSONArray;
+import uppgift3.json.JSONObject;
 import uppgift3.view.ErrorMessage;
 import uppgift3.view.GUI;
 
@@ -38,8 +38,8 @@ public class JDataReader implements Iterable<Pair<String, JSONObject>> {
 		GUI.stockGUI.symbolObserver.bind(stockSymbol);
 
 		GUI.stockGUI.enableDatePickers.selectedProperty().addListener(listener -> {
-			// När datumväljarna är aktiverade binder vi variablerna för start- och slutdatum i denna klass till datumväljarnas
-			// värden, så uppdateras intervallet automatiskt. När datumväljarna är inaktiverade sätter vi denna klass
+			// När datumväljarna är aktiverade binds variablerna för start- och slutdatum i denna klass till datumväljarnas
+			// värden, så uppdateras intervallet automatiskt. När datumväljarna är inaktiverade sätts denna klass
 			// datumvariabler till sådana värden som är lexigrafiskt mindre och större än något datum som kan förekomma i datan.
 			if (GUI.stockGUI.enableDatePickers.isSelected()) {
 				startDate.bind(GUI.stockGUI.startDatePicker.valueProperty().asString());
@@ -52,7 +52,7 @@ public class JDataReader implements Iterable<Pair<String, JSONObject>> {
 			}
 		});
 
-		// Om något gått fel med datahämtningen så visar vi ett felmeddelande.
+		// Om något gått fel med datahämtningen visas ett felmeddelande.
 		if (topLevelObjects.toString().contains("Error Message")) {
 			new ErrorMessage("The server returned an error. Try again later.");
 			return;

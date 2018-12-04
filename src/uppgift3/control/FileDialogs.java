@@ -50,7 +50,7 @@ public class FileDialogs {
 	 * savePortfolio() tar in ett varararg av typen File och utför olika funktioner
 	 * beroende på antalet filnamn som givits. Genom att använda varargs så räcker
 	 * det med en enda metod, så behöver man inte hålla reda på flera överlagrade
-	 * metoder. Om inget argument getts, så har den för tillfället inladdade
+	 * metoder. Om inget argument getts så har den för tillfället inladdade
 	 * portfolien inte ännu något associerat filnamn, och savePortfolio() anropar
 	 * metoden savePortfolioAs().
 	 * 
@@ -61,7 +61,7 @@ public class FileDialogs {
 	 * felmeddelande visas till användaren.
 	 * 
 	 * Då savePortfolio() och savePortfolioAs() har valt rätt rutt så anropas
-	 * metoden writeToDisk(), som tar hand om att konkret skriva portfoliens
+	 * metoden writeToDisk() som tar hand om att konkret skriva portfoliens
 	 * innehåll till en fil.
 	 * 
 	 */

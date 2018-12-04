@@ -26,8 +26,8 @@ import java.util.concurrent.atomic.AtomicReference;
 import static uppgift3.Main.portfolio;
 
 public class Portfolio extends Thread implements Serializable {
-	// Även här har vi icke-serialiserbara transient-variabler som måste skrivas om till andra datatyper då vi sparar och
-	// öppnar portfolier. En del variabler (t.ex. toRemove, listan på rader som skall raderas) sparas inte alls.
+	// Även här finns icke-serialiserbara transient-variabler som måste skrivas om till andra datatyper då portfolier
+	// sparas och öppnas. En del variabler (t.ex. toRemove, listan på rader som skall raderas) sparas inte alls.
 	private transient ArrayList<Integer> toRemove = new ArrayList<Integer>();
 	private transient ObservableList<Transaction> inventory = FXCollections.observableArrayList();
 	transient BooleanProperty updated = new SimpleBooleanProperty();
@@ -45,7 +45,7 @@ public class Portfolio extends Thread implements Serializable {
 	}
 
 	// Två add-metoder för att lägga till nya aktieköp i inventoryn. Ena tar in ett färdigt transaktionsobjekt,
-	// och den senare metoden explicit tar in parametrarna i konstruktorn.
+	// och den senare metoden tar in parametrarna i konstruktorn.
 	public void add(Transaction purchase) {
 		getInventory().add(purchase);
 	}
@@ -119,7 +119,7 @@ public class Portfolio extends Thread implements Serializable {
 
 	public ArrayList<String> getUniqueList() {
 		// Skapa och returnera till användaren en lista över unika aktier som finns i en portfolie. Dubletter tas inte med.
-		ArrayList<String> toReturn = new ArrayList<String>();
+		ArrayList<String> toReturn = new ArrayList<>();
 		GUI.portfolioGUI.getSelectedRows().forEach(index -> {
 			String name = getInventory().get(index).getStockName();
 			if (!toReturn.contains(name)) {

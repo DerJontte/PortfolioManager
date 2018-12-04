@@ -1,4 +1,4 @@
-package json;
+package uppgift3.json;
 
 /*
 Copyright (c) 2008 JSON.org

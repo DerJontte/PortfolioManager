@@ -3,10 +3,10 @@ package uppgift3;
 /* **************************************************************************************************************************
  * 	Denna klass innehåller main-metoden.
  * 
- * 	Vi har löst alla moment och utvecklat MVC-mönstret ytterligare från uppgift 2. Vi har slopat de globala variablerna
+ * 	Jag har löst alla moment och utvecklat MVC-mönstret ytterligare från uppgift 2. Jag har slopat de globala variablerna
  * 	och använder istället hela namnen för publika metoder och variabler då de används (t.ex. GUI.stockGUI.jReaderX för
- * 	objektena med JSON-data). Vi har skrivit om en stor del av variabeltyperna till JavaFX's observable-typer och infört
- * 	lyssnare som automatiskt uppdaterar gränssnittets grafik och en del interna variabler. Många metoder har vi gjort till
+ * 	objektena med JSON-data). Jag har skrivit om en stor del av variabeltyperna till JavaFX observable-typer och infört
+ * 	lyssnare som automatiskt uppdaterar gränssnittets grafik och en del interna variabler. Många metoder har ändrats till
  * 	flertrådade så att inte hela programmet hänger upp sig då det arbetar med t.ex. uppdatering av aktiekurser.
  * 
  */
