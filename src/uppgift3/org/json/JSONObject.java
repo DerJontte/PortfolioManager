@@ -1,4 +1,4 @@
-package uppgift3;
+package uppgift3.org.json;
 
 import java.io.Closeable;
 

@@ -1,4 +1,4 @@
-package org.json;
+package uppgift3.org.json;
 
 import static java.lang.String.format;
 

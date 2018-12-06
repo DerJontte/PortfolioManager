@@ -7,8 +7,8 @@ import javafx.collections.ObservableList;
 import javafx.scene.chart.XYChart;
 import javafx.scene.chart.XYChart.Series;
 import javafx.util.Pair;
-import uppgift3.json.JSONArray;
-import uppgift3.json.JSONObject;
+import uppgift3.org.json.JSONArray;
+import uppgift3.org.json.JSONObject;
 import uppgift3.view.ErrorMessage;
 import uppgift3.view.GUI;
 

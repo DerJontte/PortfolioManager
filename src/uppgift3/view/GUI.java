@@ -37,7 +37,7 @@ public class GUI {
 		try {
 			Group root = new Group();
 			scene = new Scene(root, 1200, 900);
-			scene.getStylesheets().addAll("uppgift3/view/application.css"); // Stylesheet för vissa delar av gränssnittet
+			scene.getStylesheets().addAll("application.css"); // Stylesheet för vissa delar av gränssnittet
 
 			// TabPane skapar en botten för de olika flikarna i programmet. Det går lätt att lägga till så många
 			// flikar som behövs genom att lägga till instanser av Tab-klassen och definiera nya klasser som
