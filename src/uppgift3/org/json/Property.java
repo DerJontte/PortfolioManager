@@ -1,4 +1,4 @@
-package uppgift3.json;
+package org.json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -25,15 +25,13 @@ SOFTWARE.
 */
 
 import java.util.Enumeration;
-import java.util.Iterator;
 import java.util.Properties;
 
 /**
  * Converts a Property file data into JSONObject and back.
  * @author JSON.org
- * @version 2014-05-03
+ * @version 2015-05-05
  */
-@SuppressWarnings("all")
 public class Property {
     /**
      * Converts a property file object into a JSONObject. The property file object is a table of name value pairs.
@@ -41,10 +39,12 @@ public class Property {
      * @return JSONObject
      * @throws JSONException
      */
-    public static JSONObject toJSONObject(Properties properties) throws JSONException {
+    public static JSONObject toJSONObject(java.util.Properties properties) throws JSONException {
+        // can't use the new constructor for Android support
+        // JSONObject jo = new JSONObject(properties == null ? 0 : properties.size());
         JSONObject jo = new JSONObject();
         if (properties != null && !properties.isEmpty()) {
-            Enumeration enumProperties = properties.propertyNames();
+            Enumeration<?> enumProperties = properties.propertyNames();
             while(enumProperties.hasMoreElements()) {
                 String name = (String)enumProperties.nextElement();
                 jo.put(name, properties.getProperty(name));
@@ -62,10 +62,12 @@ public class Property {
     public static Properties toProperties(JSONObject jo)  throws JSONException {
         Properties  properties = new Properties();
         if (jo != null) {
-            Iterator<String> keys = jo.keys();
-            while (keys.hasNext()) {
-                String name = keys.next();
-                properties.put(name, jo.getString(name));
+        	// Don't use the new entrySet API to maintain Android support
+            for (final String key : jo.keySet()) {
+                Object value = jo.opt(key);
+                if (!JSONObject.NULL.equals(value)) {
+                    properties.put(key, value.toString());
+                }
             }
         }
         return properties;

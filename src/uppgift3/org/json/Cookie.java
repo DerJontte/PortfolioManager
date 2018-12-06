@@ -1,4 +1,4 @@
-package uppgift3.json;
+package org.json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -28,7 +28,7 @@ SOFTWARE.
  * Convert a web browser cookie specification to a JSONObject and back.
  * JSON and Cookies are both notations for name/value pairs.
  * @author JSON.org
- * @version 2014-05-03
+ * @version 2015-12-09
  */
 public class Cookie {
 
